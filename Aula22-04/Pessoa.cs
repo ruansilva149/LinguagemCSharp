@@ -10,7 +10,14 @@ namespace Aula22_04
     {
         private string nome;
         public double salario;
-
+        public string senha;
+        public string Senha
+        {
+            set
+            {
+                senha = value;
+            }
+        }
         public double Salario
         {
             get
@@ -30,10 +37,15 @@ namespace Aula22_04
                 }
             }
         }
+
+        public Pessoa() 
+        {
+        }
         
         public Pessoa(string nome, double salario)
         {
             this.nome = nome;
+            this.salario = salario;
         }
 
         public string Nome
@@ -48,7 +60,8 @@ namespace Aula22_04
                 this.nome = value;
             }
         }
-        
+
+        public string Email { get; set; }
     }
 
 }
